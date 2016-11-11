@@ -1,0 +1,7 @@
+---
+
+- name: install /etc/rsyslog.d/elasticsearch.conf from template
+  template:
+    src: "etc/rsyslog.d/elasticsearch.conf"
+    dest: "/etc/rsyslog.d/elasticsearch.conf"
+  notify: restart rsyslog

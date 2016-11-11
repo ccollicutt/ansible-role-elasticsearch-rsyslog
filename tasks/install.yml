@@ -1,0 +1,5 @@
+---
+
+- name: ensure rsyslog-elasticsearch is installed
+  apt:
+    name: "rsyslog-elasticsearch"
